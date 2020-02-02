@@ -1,14 +1,14 @@
 # docker-compose for vue.js
 
-######Clone repository to app/devops
+Clone repository to app/devops
 
-######Create environment config file form example file for app
+Create environment config file form example file for app
 
 ```bash
 cp devops/.env.example .env
 ```
 
-######Change
+Change
 
 ```
 DOCKER_IMAGE_PREFIX
@@ -18,31 +18,31 @@ APP_NAME
 APP_REST_PORT
 ```
 
-######Install NPM dependencies
+Install NPM dependencies
 
 ```
 docker-compose run --rm nodejs npm install
 ```
 
-######Build development or production sources' bundle
+Build development or production sources' bundle
 
 ```
 docker-compose run --rm nodejs npm run dev
 ```
 
-######OR for prod
+OR for prod
 
 ```
 docker-compose run --rm nodejs npm run prod
 ```
 
-######Start docker containers
+Start docker containers
 
 ```
 docker-compose up
 ```
 
-######OR (for PROD) run docker in background (daemon)
+OR (for PROD) run docker in background (daemon)
 
 ```
 docker-compose up -d
