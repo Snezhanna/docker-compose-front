@@ -1,7 +1,6 @@
 # docker-compose for vue.js
 
-######Clone repository
-Clone repository to app/devops
+######Clone repository to app/devops
 
 ######Create environment config file form example file for app
 
